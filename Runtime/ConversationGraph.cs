@@ -5,7 +5,7 @@ using XNode;
 
 namespace KConversation
 {
-	[CreateAssetMenu( fileName = "conversation_graph", menuName = "Conversation/Graph" )]
+	[CreateAssetMenu( fileName = "conversation_graph", menuName = "Conversation/Graph" ), RequireNode( typeof( RootNode ) )]
 	public class ConversationGraph : NodeGraph
 	{
 	}

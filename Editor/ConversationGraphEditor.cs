@@ -15,7 +15,12 @@ namespace KConversationEditor
 
 		public override string GetNodeMenuName( Type type )
 		{
-			if( typeof( ConversationNodeBase ).IsAssignableFrom( type ) )
+			if( type == typeof( RootNode ) )
+			{
+				return null;
+			}
+
+			if( typeof( NodeBase ).IsAssignableFrom( type ) )
 			{
 				return type.Name;
 			}
@@ -26,11 +31,6 @@ namespace KConversationEditor
 		public override void OnOpen()
 		{
 			base.OnOpen();
-
-			if( Target.nodes.Count == 0 )
-			{
-				CreateNode( typeof( ConversationNodeBase ), Vector2.zero );
-			}
 		}
 	}
 }

@@ -5,7 +5,7 @@ using XNode;
 
 namespace KConversation
 {
-	public abstract class ConversationNodeBase : Node
+	public abstract class NodeBase : Node
 	{
 		// Use this for initialization
 		protected override void Init()
