@@ -1,5 +1,5 @@
 {
-    "name": "NewAssembly",
+    "name": "KConversation.Runtime",
     "rootNamespace": "",
     "references": [
         "GUID:b8e24fd1eb19b4226afebb2810e3c19b"

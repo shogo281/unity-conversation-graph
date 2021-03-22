@@ -19,5 +19,10 @@ namespace KConversation
 		[SerializeField] private Option[] optionArray = { };
 		[Input( backingValue = ShowBackingValue.Never, connectionType = ConnectionType.Override ), SerializeField] private NodeBase input = null;
 		[Output( backingValue = ShowBackingValue.Never, connectionType = ConnectionType.Multiple ), SerializeField] private NodeBase output = null;
+
+		public override NodeBase MoveNext()
+		{
+			return output;
+		}
 	}
 }

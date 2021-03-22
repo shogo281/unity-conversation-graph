@@ -1,5 +1,5 @@
 {
-    "name": "KConversationEditor",
+    "name": "KConversation.Editor",
     "rootNamespace": "",
     "references": [
         "GUID:be9dda2a0f2bed14d97e28b5bc1f1df6",

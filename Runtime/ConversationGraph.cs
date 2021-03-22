@@ -24,5 +24,17 @@ namespace KConversation
 
 			return node;
 		}
+
+		public override Node CopyNode( Node original )
+		{
+			var copiedNode = base.CopyNode( original );
+
+			if( copiedNode is NodeBase copiedNodeBase && original is NodeBase originalNodeBase )
+			{
+				originalNodeBase.OnCopy( copiedNodeBase );
+			}
+
+			return copiedNode;
+		}
 	}
 }
